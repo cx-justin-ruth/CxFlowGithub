@@ -6,5 +6,16 @@ How many can you find and exploit?? <br/><br/>
 
 Check your progress on the <a href="score.jsp">Scoring page</a>.
 
+<c:choose>
+    <c:when test="${param.debug!=''}">
+       <h2>The text entered was : </h2><%=test%>
+        <br />
+    </c:when>
+    <c:otherwise>
+        <br />
+        <br />
+    </c:otherwise>
+</c:choose>
+
 <jsp:include page="/footer.jsp"/>
 
